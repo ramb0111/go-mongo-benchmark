@@ -76,9 +76,7 @@ func main() {
 
 	InsertPassengers(ctx, collection, data_set)
 
-	// db.train.find({city:{$in:["uwwy382hw829982wqhg"]}}).explain('executionStats')
-	// db.train.find({name:"uwwy382hw829982wqhg"}).explain('executionStats')
-	// db.train.count()
+	
 	// total city count in train collection: 61271918
 	// total document in train collection 1124127
 

@@ -1,0 +1,3 @@
+// db.train.find({city:{$in:["uwwy382hw829982wqhg"]}}).explain('executionStats')
+// db.train.find({name:"uwwy382hw829982wqhg"}).explain('executionStats')
+// db.train.count()
