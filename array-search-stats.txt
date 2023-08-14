@@ -1,0 +1,70 @@
+{
+  explainVersion: "1",
+  queryPlanner:
+    {
+      namespace: "test.train",
+      indexFilterSet: false,
+      parsedQuery: { city: { "$eq": "eduehnijoeioew" } },
+      queryHash: "742BC7D2",
+      planCacheKey: "742BC7D2",
+      maxIndexedOrSolutionsReached: false,
+      maxIndexedAndSolutionsReached: false,
+      maxScansToExplodeReached: false,
+      winningPlan:
+        {
+          stage: "COLLSCAN",
+          filter: { city: { "$eq": "eduehnijoeioew" } },
+          direction: "forward",
+        },
+      rejectedPlans: [],
+    },
+  executionStats:
+    {
+      executionSuccess: true,
+      nReturned: 0,
+      executionTimeMillis: 3972,
+      totalKeysExamined: 0,
+      totalDocsExamined: 324127,
+      executionStages:
+        {
+          stage: "COLLSCAN",
+          filter: { city: { "$eq": "eduehnijoeioew" } },
+          nReturned: 0,
+          executionTimeMillisEstimate: 2629,
+          works: 324129,
+          advanced: 0,
+          needTime: 324128,
+          needYield: 0,
+          saveState: 345,
+          restoreState: 345,
+          isEOF: 1,
+          direction: "forward",
+          docsExamined: 324127,
+        },
+    },
+  command:
+    {
+      find: "train",
+      filter: { city: { "$in": ["eduehnijoeioew"] } },
+      "$db": "test",
+    },
+  serverInfo:
+    {
+      host: "AP-FJYPVP3",
+      port: 27017,
+      version: "6.0.5",
+      gitVersion: "c9a99c120371d4d4c52cbb15dac34a36ce8d3b1d",
+    },
+  serverParameters:
+    {
+      internalQueryFacetBufferSizeBytes: 104857600,
+      internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+      internalLookupStageIntermediateDocumentMaxSizeBytes: 104857600,
+      internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+      internalQueryMaxBlockingSortMemoryUsageBytes: 104857600,
+      internalQueryProhibitBlockingMergeOnMongoS: 0,
+      internalQueryMaxAddToSetBytes: 104857600,
+      internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    },
+  ok: 1,
+}

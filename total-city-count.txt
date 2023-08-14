@@ -1,0 +1,12 @@
+db.train.aggregate([
+    {
+        "$group": {
+            "_id": null,
+            "count": {
+                "$sum": {
+                    "$size": "$city"
+                }
+            }
+        }
+    }
+])

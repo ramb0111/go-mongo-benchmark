@@ -1,0 +1,2 @@
+db.train.createIndex( { city: 1 } )
+db.train.createIndex( { name: 1 } )
